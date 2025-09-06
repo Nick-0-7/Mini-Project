@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ElectroMart - Electronics Store</title>
+  <style>
+    /* Body Styling */
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background-color: #1e293b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 30px;
+      box-shadow: 0 2px 10px rgba(0, 212, 255, 0.2);
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      font-weight: bold;
+      color: #00d4ff;
+    }
+
+    .navbar .logo img {
+      width: 32px;
+      margin-right: 10px;
+      filter: brightness(0) saturate(100%) invert(71%) sepia(91%) saturate(1472%) hue-rotate(161deg) brightness(104%) contrast(104%);
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #f1f5f9;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #00d4ff;
+    }
+
+    /* Button Styling */
+    button {
+      background-color: #10b981;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #059669;
+    }
+
+    /* Panels / Sections */
+    .container {
+      height: 300vh;
+    }
+
+    .panel {
+      position: sticky;
+      height: 90vh;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+      font-size: 3rem;
+      transition: 0.5s;
+      background-color: #1e293b;
+      color: #f1f5f9;
+      flex-direction: column;
+    }
+
+    .panel video {
+      max-width: 72%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    h3 {
+      font-size: 25px;
+      margin: 20px 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Logo">
+      ElectroMart
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Log In</a></li>
+      <li><a href="#">Log Out</a></li>
+    </ul>
+  </div>
+
+  <!-- Scrollable Panels -->
+  <div class="container">
+    <div class="panel">
+      <h3>Top Deals on Headphones</h3>
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155228f1e2?auto=format&fit=crop&w=800&q=80"
+        alt="Headphones">
+    </div>
+
+    <div class="panel">
+      <h3>Gaming Gear for Pros</h3>
+      <video src="C:\Users\yashk\Downloads\headphones.mp4" controls loop muted></video>
+    </div>
+
+    <div class="panel">
+      <h3>Smartphones at Best Price</h3>
+      <video src="C:\Users\yashk\Downloads\mobile.mp4" controls loop muted></video>
+    </div>
+
+</body>
+
+</html>
