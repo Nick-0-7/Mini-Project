@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ElectroMart - Electronics Store</title>
+  <style>
+    /* Body Styling */
+    body {
+      background-color: #ffffff;
+      color: #f1f5f9;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 30px;
+      box-shadow: 0 2px 10px rgba(0, 212, 255, 0.2);
+      background-color: #1e293b;
+
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      font-weight: bold;
+      color: #ffbb00;
+    }
+
+    .navbar .logo img {
+      width: 32px;
+      margin-right: 10px;
+      filter: brightness(0) saturate(100%) invert(71%) sepia(91%) saturate(1472%) hue-rotate(161deg) brightness(104%) contrast(104%);
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #ff9900;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #00d4ff;
+    }
+
+    /* Button Styling */
+    button {
+      background-color: #10b981;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #059669;
+    }
+
+    /* Panels / Sections */
+    .container {
+      height: 300vh;
+    }
+
+    .panel1 {
+      text-align: center;
+      overflow: hidden;
+      position: sticky;
+      height: 70vh;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+      font-size: 20px;
+      transition: 0.5s;
+      background-color: #ffffff;
+      color: #000000;
+      flex-direction: column;
+    }
+
+    .overlay {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 150vh;
+      background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+      z-index: 1;
+    }
+
+    .panel2 {
+      text-align: center;
+      position: sticky;
+      height: 120vh;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+      font-size: 20px;
+      transition: 0.5s;
+      background-color: #a5a5a5;
+      color: #000000;
+      flex-direction: column;
+    }
+
+    .panel img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    button {
+      background-color: white;
+    }
+
+    button:hover {
+      background-color: orangered;
+    }
+
+    h3 {
+      font-size: 25px;
+      margin: 20px 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h2 {
+      margin-bottom: 580px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      /* keep video behind content */
+    }
+
+    /* Content on top */
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      top: 40%;
+      font-size: 32px;
+      font-family: Arial, sans-serif;
+    }
+
+    .name {
+      margin-top: 400px;
+      margin-left: 35%;
+      margin-right: 35%;
+      border-radius: 12px;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="C:\Users\Vivek\OneDrive\Desktop\miniproject\second year mini project\image.png" alt="Logo">
+      ElectroMart
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><button onclick="document.getElementById('section1').scrollIntoView({behavior:'smooth'})"
+          style="background-color: white;"><a href="#">log in</a></button></li>
+    </ul>
+  </div>
+
+  <!-- Scrollable Panels -->
+  <div class="container">
+    <div class="panel1">
+
+      <!-- Background video -->
+      <video autoplay muted loop class="bg-video">
+        <source src="C:\Users\Vivek\OneDrive\Desktop\miniproject\second year mini project\bgvideo.mp4" type="video/mp4">
+      </video>
+    </div>
+
+
+
+    <div class="overlay">
+      <!-- Content -->
+      
+      <div class="content">
+        <div class="name">
+          <h2 style="font-size: 40px; color: rgb(255, 255, 255);">Welcome to Local Mart</h2>
+        </div>
+        <img  src="C:\Users\Vivek\OneDrive\Desktop\miniproject\second year mini project\image.png"
+        alt="image" style="transform: translateY(-500px);" >
+      </div>
+    </div>
+
+
+
+    <div class="panel2">
+      <section id="section1">
+        <h2>Sign up for free</h2>
+      </section>
+    </div>
+
+</body>
+
+</html>

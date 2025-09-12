@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Background Example</title>
+  <style>
+    /* Make video cover the whole background */
+    .bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1; /* keep video behind content */
+    }
+
+    /* Content on top */
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      top: 40%;
+      font-size: 32px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background video -->
+  <video autoplay muted loop class="bg-video">
+    <source src="bgvideo" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Content -->
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This text is on top of the background video</p>
+  </div>
+
+</body>
+</html>

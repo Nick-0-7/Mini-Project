@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Electrical Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f5f0; /* Warm neutral background */
+      color: #3b2f2f; /* Dark warm gray text */
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #d4b483; /* Warm beige-brown */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      font-weight: bold;
+      color: #3b2f2f;
+    }
+    .navbar .logo img {
+      width: 32px;
+      margin-right: 10px;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar ul li {
+      margin: 0 15px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #3b2f2f;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .navbar ul li a:hover {
+      color: #5e503f; /* Slightly darker hover */
+    }
+
+    /* Main Section */
+    .main {
+      text-align: center;
+      padding: 70px 20px;
+    }
+    .main img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+    .quote {
+      font-size: 20px;
+      font-style: italic;
+      margin-top: 15px;
+      color: #5e503f;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #d4b483;
+      padding: 12px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-weight: bold;
+      color: #3b2f2f;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Logo">
+      ElectroMart
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Log In</a></li>
+      <li><a href="#">Log Out</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <img src="https://cdn-icons-png.flaticon.com/512/2947/2947985.png" alt="Electrical Logo">
+    <h1>Welcome to ElectroMart</h1>
+    <p class="quote">"Powering your life with quality electrical items."</p>
+    <p class="quote">"Bright ideas for a brighter future."</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © B7 Batch
+  </footer>
+</body>
+</html>
